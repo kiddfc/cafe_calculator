@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <h1>Cafe Calculator</h1>
-        <!-- <div class="buttons"> -->
-            <button id="latte">Latte - 150₺</button>
-            <button id="chocolate">Chocolate - 200₺</button>
-            <button id="paste">Paste - 250₺</button>
-            <button id="delete">⧸</button>
-        <!-- </div> -->
-        <div class="display">
-            <div id="total">Total: <span id="total">0.00</span>₺</div>
-            <div id="review">Selected Items:</div>
-            <ul id="item-list"></ul>
-        </div>
+    <h1>Cafe Calculator</h1>
+    <div class="container">
+        <h2>Çikolatalar</h2>
+        <button id="Şekersiz" class="button">Şekersiz (₺150)</button>
+        <button id="Proteinli" class="button">Proteinli (₺140)</button>
+        <button id="Hafif bitter" class="button">Hafif Bitter (₺140)</button>
+        <button id="Beyaz" class="button">Beyaz (₺120)</button>
+        
+        <h2>Ezmeler</h2>
+        <button id="Fındık" class="button">Fındık (₺275)</button>
+        <button id="Badem (șeker ilavesiz)" class="button">Badem Şeker İlavesiz (₺325)</button>
+        <button id="Badem (vegan sütlü)" class="button">Badem Vegan Sütlü (₺375)</button>
+        
+        <h2>İçecekler</h2>
+        <button id="Latte" class="button">Latte (₺120)</button>
+        <button id="Americano" class="button">Americano (₺110)</button>
+        <button id="Cappuccino" class="button">Cappuccino (₺120)</button>
+        <button id="Filtre" class="button">Filtre (₺100)</button>
+        <button id="Türk kahvesi" class="button">Türk Kahvesi (60)</button>
+        <button id="Soda" class="button">Soda (40)</button>
+        </br>
+        <button id="delete" class="button">Delete Last Item</button>
+        <div id="review" class="display-area">Selected Items: None</div>
+        <div id="total" class="display-area">Total: ₺0.00</div>
     </div>
     <script src="app.js"></script>
 </body>

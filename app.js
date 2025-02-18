@@ -1,34 +1,43 @@
-const items = {
-    Latte: 150,
-    Chocolate: 200,
-    Paste: 250
-};
+document.addEventListener('DOMContentLoaded', () => {
+    const items = {
+        Şekersiz: 150,
+        Proteinli: 140,
+        'Hafif bitter': 140,
+        Beyaz: 120,
+        Fındık: 275,
+        'Badem (șeker ilavesiz)': 325,
+        'Badem (vegan sütlü)': 375,
+        Latte: 120,
+        Americano: 110,
+        Cappuccino: 120,
+        Filtre: 100,
+        'Türk kahvesi': 60,
+        Soda: 40
+    };
 
-let total = 0;
-let selectedItems = [];
+    let selectedItems = [];
+    let total = 0;
 
-const updateDisplay = () => {
-    const totalDisplay = document.getElementById('total');
-    const reviewDisplay = document.getElementById('review');
-    totalDisplay.textContent = `Total: ₺${total.toFixed(2)}`;
-    reviewDisplay.textContent = `Selected Items: ${selectedItems.join(', ') || 'None'}`;
-};
-
-const addItem = (item) => {
-    selectedItems.push(item);
-    total += items[item];
-    updateDisplay();
-};
-
-const deleteLastItem = () => {
-    if (selectedItems.length > 0) {
-        const lastItem = selectedItems.pop();
-        total -= items[lastItem];
-        updateDisplay();
+    function updateDisplay() {
+        document.getElementById('review').innerText = `Selected Items: ${selectedItems.join(', ') || 'None'}`;
+        document.getElementById('total').innerText = `Total: ₺${total.toFixed(2)}`;
     }
-};
 
-document.getElementById('latte').addEventListener('click', () => addItem('Latte'));
-document.getElementById('chocolate').addEventListener('click', () => addItem('Chocolate'));
-document.getElementById('paste').addEventListener('click', () => addItem('Paste'));
-document.getElementById('delete').addEventListener('click', deleteLastItem);
+    Object.keys(items).forEach(id => {
+        document.getElementById(id).addEventListener('click', () => {
+            selectedItems.push(id);
+            total += items[id];
+            updateDisplay();
+        });
+    });
+
+    document.getElementById('delete').addEventListener('click', () => {
+        if (selectedItems.length > 0) {
+            const lastItem = selectedItems.pop();
+            total -= items[lastItem];
+            updateDisplay();
+        }
+    });
+
+    updateDisplay();
+});
