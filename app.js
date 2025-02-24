@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Hafif bitter': 140,
         Beyaz: 120,
         Fındık: 275,
+        'Fındık (șeker ilavesiz)': 325,
+        'Fındık (vegan sütlü)': 375,
+        Badem: 275,
         'Badem (șeker ilavesiz)': 325,
         'Badem (vegan sütlü)': 375,
         Latte: 120,
@@ -12,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Cappuccino: 120,
         Filtre: 100,
         'Türk kahvesi': 60,
+        'Sıcak Çikolata': 180,
         Soda: 40
     };
 
