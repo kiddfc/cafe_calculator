@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         Latte: 120,
         Americano: 110,
         Cappuccino: 120,
+        'Espresso (single)': 50,
+        'Espresso (double)': 100,
         Filtre: 100,
         'Türk kahvesi': 60,
         'Sıcak Çikolata': 180,
