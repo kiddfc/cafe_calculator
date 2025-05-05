@@ -5,55 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h1>Cafe Calculator</h1>
-    <div class="container">
-        <h2>Çikolatalar</h2>
-        <button id="Şekersiz Bitter" class="button">Şekersiz Bitter (₺150)</button>
-        <button id="Proteinli Sütlü" class="button">Proteinli Sütlü (₺150)</button>
-        <button id="Hafif bitter" class="button">Hafif Bitter (₺140)</button>
-        <button id="Beyaz" class="button">Beyaz (₺120)</button>
-        
-        <h2>Ezmeler</h2>
-        <h3>Besleyici Ezmeler</h3>
-        <button id="%55 Badem Ezmesi 30 gr" class="button">%55 Badem Ezmesi 30 gr (₺60)</button>
-        <button id="%55 Badem Ezmesi 180 gr" class="button">%55 Badem Ezmesi 180 gr (₺220)</button>
-        <button id="%55 Fındık Ezmesi 30 gr" class="button">%55 Fındık Ezmesi 30 gr (₺60)</button>
-        <button id="%55 Fındık Ezmesi 180 gr" class="button">%55 Fındık Ezmesi 180 gr (₺220)</button>
-        <h3>Şeker İlavesiz Ezmeler</h3>
-        <button id="%75 Badem Ezmesi 30 gr" class="button">%75 Badem Ezmesi 30 gr (₺65)</button>
-        <button id="%75 Badem Ezmesi 180 gr" class="button">%75 Badem Ezmesi 180 gr (₺250)</button>
-        <button id="%75 Fındık Ezmesi 30 gr" class="button">%75 Fındık Ezmesi 30 gr (₺65)</button>
-        <button id="%75 Fındık Ezmesi 180 gr" class="button">%75 Fındık Ezmesi 180 gr (₺250)</button>
-        <h3>Vegan Sütlü & Şeker İlavesiz Ezmeler</h3>
-        <button id="%80 Badem Ezmesi 30 gr" class="button">%80 Badem Ezmesi 30 gr (₺75)</button>
-        <button id="%80 Badem Ezmesi 180 gr" class="button">%80 Badem Ezmesi 180 gr (₺310)</button>
-        <button id="%80 Fındık Ezmesi 30 gr" class="button">%80 Fındık Ezmesi 30 gr (₺75)</button>
-        <button id="%80 Fındık Ezmesi 180 gr" class="button">%80 Fındık Ezmesi 180 gr (₺310)</button>
-        <h2>İçecekler</h2>
-        <button id="Espresso (single)" class="button">Espresso (single) (₺50)</button>
-        <button id="Espresso (double)" class="button">Espresso (double) (₺100)</button>
-        <button id="Macchiato" class="button">Macchiato (₺110)</button>
-        <button id="Americano" class="button">Americano (₺110)</button>
-        </br>
-        <button id="Latte" class="button">Latte (₺120)</button>
-        <button id="Cappuccino" class="button">Cappuccino (₺120)</button>
-        <button id="Flat White" class="button">Flat White (₺130)</button>
-        <button id="Cocoa Works' Mocha" class="button">Cocoa Works' Mocha (₺160)</button>
-        </br>
-        <button id="Filtre Kahve" class="button">Filtre Kahve (₺100)</button>
-        <button id="Sıcak Çikolata" class="button">Sıcak Çikolata (₺180)</button>
-        <button id="Türk Kahvesi" class="button">Türk Kahvesi (₺60)</button>
-        <button id="Iced Latte" class="button">Iced Latte (₺130)</button>
-        </br>
-        <button id="Iced Americano" class="button">Iced Americano (₺130)</button>
-        <button id="Soda" class="button">Soda (₺40)</button>
-        <button id="Bitkisel Süt" class="button">Bitkisel Süt (₺40)</button>
-        </br>
-        <button id="delete" class="button">Delete Last Item</button>
-        <div id="review" class="display-area">Selected Items: None</div>
-        <div id="total" class="display-area">Total: ₺0.00</div>
+    <div class="main-container">
+        <div class="container">
+            <h2>Çikolatalar</h2>
+            <button id="Şekersiz Bitter" class="button">Şekersiz Bitter (₺150)</button>
+            <button id="Proteinli Sütlü" class="button">Proteinli Sütlü (₺150)</button>
+            <button id="Hafif bitter" class="button">Hafif Bitter (₺140)</button>
+            <button id="Beyaz" class="button">Beyaz (₺120)</button>
+            
+            <h2>Ezmeler</h2>
+            <h3>Besleyici Ezmeler</h3>
+            <button id="%55 Badem Ezmesi 30 gr" class="button">%55 Badem Ezmesi 30 gr (₺60)</button>
+            <button id="%55 Badem Ezmesi 180 gr" class="button">%55 Badem Ezmesi 180 gr (₺220)</button>
+            <button id="%55 Fındık Ezmesi 30 gr" class="button">%55 Fındık Ezmesi 30 gr (₺60)</button>
+            <button id="%55 Fındık Ezmesi 180 gr" class="button">%55 Fındık Ezmesi 180 gr (₺220)</button>
+            <h3>Şeker İlavesiz Ezmeler</h3>
+            <button id="%75 Badem Ezmesi 30 gr" class="button">%75 Badem Ezmesi 30 gr (₺65)</button>
+            <button id="%75 Badem Ezmesi 180 gr" class="button">%75 Badem Ezmesi 180 gr (₺250)</button>
+            <button id="%75 Fındık Ezmesi 30 gr" class="button">%75 Fındık Ezmesi 30 gr (₺65)</button>
+            <button id="%75 Fındık Ezmesi 180 gr" class="button">%75 Fındık Ezmesi 180 gr (₺250)</button>
+            <h3>Vegan Sütlü & Şeker İlavesiz Ezmeler</h3>
+            <button id="%80 Badem Ezmesi 30 gr" class="button">%80 Badem Ezmesi 30 gr (₺75)</button>
+            <button id="%80 Badem Ezmesi 180 gr" class="button">%80 Badem Ezmesi 180 gr (₺310)</button>
+            <button id="%80 Fındık Ezmesi 30 gr" class="button">%80 Fındık Ezmesi 30 gr (₺75)</button>
+            <button id="%80 Fındık Ezmesi 180 gr" class="button">%80 Fındık Ezmesi 180 gr (₺310)</button>
+            <h2>İçecekler</h2>
+            <button id="Espresso (single)" class="button">Espresso (single) (₺50)</button>
+            <button id="Espresso (double)" class="button">Espresso (double) (₺100)</button>
+            <button id="Macchiato" class="button">Macchiato (₺110)</button>
+            <button id="Americano" class="button">Americano (₺110)</button>
+            </br>
+            <button id="Latte" class="button">Latte (₺120)</button>
+            <button id="Cappuccino" class="button">Cappuccino (₺120)</button>
+            <button id="Flat White" class="button">Flat White (₺130)</button>
+            <button id="Cocoa Works' Mocha" class="button">Cocoa Works' Mocha (₺160)</button>
+            </br>
+            <button id="Filtre Kahve" class="button">Filtre Kahve (₺100)</button>
+            <button id="Sıcak Çikolata" class="button">Sıcak Çikolata (₺180)</button>
+            <button id="Türk Kahvesi" class="button">Türk Kahvesi (₺60)</button>
+            <button id="Iced Latte" class="button">Iced Latte (₺130)</button>
+            </br>
+            <button id="Iced Americano" class="button">Iced Americano (₺130)</button>
+            <button id="Soda" class="button">Soda (₺40)</button>
+            <button id="Bitkisel Süt" class="button">Bitkisel Süt (₺40)</button>
+        </div>
+        <div class="right-container">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <button id="clear-all" class="button">Clear All</button>
+                <div id="total" class="display-area">Total: ₺0.00</div>
+            </div>
+            <ul id="review" class="display-area">Selected Items:</ul>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
