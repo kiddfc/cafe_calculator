@@ -105,6 +105,19 @@ button {
     margin-bottom: 18px; /* Adds spacing between each selected item */
 }
 
+#review table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#review tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+#review tr:nth-child(even) {
+    background-color: #e9ecef; /* Slightly darker gray for even rows */
+}
+
 .right-container {
     flex: 0 0 400px;
     background: #fff;
