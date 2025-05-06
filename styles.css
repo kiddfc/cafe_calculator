@@ -57,6 +57,18 @@ button {
     background-color: #5d4037; /* Darker brown */
 }
 
+.container .button {
+    width: 150px; /* Ensures all buttons in the left container are the same size */
+    height: auto; /* Allows height to adjust based on content */
+    padding: 10px; /* Adds proper padding */
+    font-size: calc(10px + 0.5vw); /* Adaptive font size based on viewport width */
+    display: inline-block;
+    text-align: center;
+    line-height: normal; /* Ensures proper line height for multi-line text */
+    word-wrap: break-word; /* Handles long text gracefully */
+    margin: 10px; /* Adds consistent spacing between buttons */
+}
+
 .display-area {
     margin-top: 20px;
     padding: 10px;

@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         reviewList.appendChild(table);
-        document.getElementById('total').innerText = `Total: ₺${total.toFixed(2)}`;
+        document.getElementById('total').innerText = `Toplam: ₺${total.toFixed(2)}`;
     }
 
     Object.keys(items).forEach(id => {
